@@ -75,11 +75,7 @@
 		margin-bottom: 30px;
 	}
 
-	@media (min-width: 768px) navbar.less:128 {} 
-	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-    margin-right: 185px;
-    margin-left: 15px;
-	}
+	
 
 .header {
 	margin-bottom: 0px;
@@ -261,6 +257,24 @@
 				    clear: both;
 				}
 
+@media (min-width: 768px) navbar.less:128 {} 
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 185px;
+    margin-left: 15px;
+	}
 
+	/*@media only screen and (max-width: 768px) {
+		.icons {
+			float: right;
+  			position: relative;
+  			left: -130px;
+  			text-align: left;
+		}
+	}*/
+
+	/*When viewed on smaller screens the only element to go out of position
+	is the container for the connect with me icons. I tried to set a media query (see above)
+	in order to address this issue, but when I add the viewport meta tag to my HTML
+	it causes the three page links in the header to disappear*/
 
 </style>
